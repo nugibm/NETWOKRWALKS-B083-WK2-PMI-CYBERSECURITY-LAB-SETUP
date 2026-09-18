@@ -4,13 +4,16 @@ Goals
 The key goals for this project were to:
 
 Use tools like;
+
 whatweb
+
 kali@kali:~$ whatweb networkwalks.com
 http://networkwalks.com [301 Moved Permanently] Apache, Cookies[__wpdm_client], Country[UNITED STATES][US], HTTPServer[Apache], HttpOnly[__wpdm_client], IP[192.232.216.135], RedirectLocation[https://networkwalks.com/], UncommonHeaders[permissions-policy,x-redirect-by,upgrade,referrer-policy,x-endurance-cache-level,x-nginx-cache]
 https://networkwalks.com [200 OK] Apache, Bootstrap[7.1], Cookies[__wpdm_client], Country[UNITED STATES][US], Email[info@networkwalks.com], Frame, Google-Tag-Manager, HTML5, HTTPServer[Apache], HttpOnly[__wpdm_client], IP[192.232.216.135], JQuery[3.7.1], MetaGenerator[WordPress 7.1,WordPress Download Manager 3.3.58], Open-Graph-Protocol[website], Script[4684NR-IPIB&amp;pidnVar2=50511&amp;prtVar2=7&amp;scvVar2=12,application/json,application/ld+json,module,speculationrules,text/javascript], Title[Networkwalks Academy], UncommonHeaders[permissions-policy,link,upgrade,referrer-policy,x-endurance-cache-level,x-nginx-cache], WordPress[7.1]
 https://networkwalks.com/ [200 OK] Apache, Bootstrap[7.1], Country[UNITED STATES][US], Email[info@networkwalks.com], Frame, Google-Tag-Manager, HTML5, HTTPServer[Apache], IP[192.232.216.135], JQuery[3.7.1], MetaGenerator[WordPress 7.1,WordPress Download Manager 3.3.58], Open-Graph-Protocol[website], Script[4684NR-IPIB&amp;pidnVar2=50511&amp;prtVar2=7&amp;scvVar2=12,application/json,application/ld+json,module,speculationrules,text/javascript], Title[Networkwalks Academy], UncommonHeaders[permissions-policy,link,upgrade,referrer-policy,x-endurance-cache-level,x-nginx-cache], WordPress[7.1]
 
 curl
+
 kali@kali:~$ curl -I https://networkwalks.com
 HTTP/2 200 
 permissions-policy: private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"), private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
@@ -24,6 +27,7 @@ date: Thu, 17 Sep 2026 18:52:16 GMT
 server: Apache
 
 nslookup
+
 kali@kali:~$ nslookup networkwalks.com
 Server:         8.8.8.8
 Address:        8.8.8.8#53
@@ -33,6 +37,7 @@ Name:   networkwalks.com
 Address: 192.232.216.135
 
 Nmap
+
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-17 15:33 -0400
 Nmap scan report for localhost (127.0.0.1)
 Host is up (0.0000050s latency).
@@ -42,6 +47,7 @@ Not shown: 100 closed tcp ports (reset)
 Nmap done: 1 IP address (1 host up) scanned in 0.24 second
 
 wafw00f
+
 kali@kali:~$ wafw00f networkwalks.com
 
                 ______
@@ -68,6 +74,7 @@ kali@kali:~$ wafw00f networkwalks.com
 kali@kali:~$ 
 
 whois
+
 ┌──(kali㉿kali)-[~]
 └─$ whois networkwalks.com
    Domain Name: NETWORKWALKS.COM
